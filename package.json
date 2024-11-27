@@ -2,7 +2,7 @@
   "name": "my-chart-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nidoveralis.github.iochart-app",
+  "homepage": "https://nidoveralis.github.io/chart-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

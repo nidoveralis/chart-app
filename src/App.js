@@ -8,7 +8,7 @@ import {
   LineElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
 } from "chart.js";
 
 ChartJS.register(
@@ -38,11 +38,36 @@ function App() {
   const options = {
     responsive: true,
     indexAxis: "x",
+    scales: {
+      x: {
+        ticks: {
+          color: '#fff',
+        },
+        border: {
+          color: "rgb(241 190 66)"
+        },
+        grid: {
+          display: false,
+        }
+      },
+      y: {
+        ticks: {
+          color: '#fff',
+        },
+        border: {
+          color: "rgb(241 190 66)"
+        },
+        grid: {
+          display: false,
+        }
+      }
+    },
     plugins: {
       legend: {
         display: true,
         position: "bottom",
         labels: {
+          color: '#fff'
         },
       },
       datalabels: {
@@ -51,7 +76,7 @@ function App() {
         anchor: "center",
         formatter: (value) => { return value > 0 ? value : "" },
         offset: -3,
-      },
+      }
     },
   };
 
